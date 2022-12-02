@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Login / Register</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    </head>
+    <body>
+    <div class="container">
+        <form class="form" action="login.php" method="post" id="login">
+            <h1 class="form_title">Login</h1>
+            <div class="form_message form_message_error"></div>
+            <div class="form_input_group">
+                <input type="text" class="form_input" autofocus name="userName" placeholder="Username or email">
+                <div class="form_input_error_message"></div>
+            </div>
+            <div class="form_input_group">
+                <input type="password" class="form_input" name="password" autofocus placeholder="password">
+                <div class="form_input_error_message"></div>
+            </div>
+            <button class="form_button " type="submit">continue</button>
+            <p class="form_text">
+                <a href="#" class="form_link">Forgot your password?</a>
+            </p>
+            <p class="form_text">
+                <a href="register.html" class="form_link" id="linkCreateAccount">Dont have an account? Create an account</a>
+            </p>
+        </form>
+
+    </div>
+
+</body>
+</html>
