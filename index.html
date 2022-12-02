@@ -8,28 +8,56 @@
 
     <title>Login / Register</title>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    </head>
+    <body>
     <div class="container">
-        <div class="forms">
-            <div class = "login">
-                <spam class="title">Login 
-                </spam>
-                <form action="#" class="form-1">
-                    <div class="input-field">
-
-                        <input type="text" placeholder="Enter your email" required>
-                    </div>
-                    <div class="input-field">
-
-                        <input type="text" placeholder="Enter your password" required>
-                        <i class="fa-solid fa-user"></i>
-                    </div>
-                    <span><a href="#">sign up / forgot password</a></span>
-                </form>
+        <form class="form" id="login">
+            <h1 class="form_title">Login</h1>
+            <div class="form_message form_message_error"></div>
+            <div class="form_input_group">
+                <input type="text" class="form_input" autofocus placeholder="Username or email">
+                <div class="form_input_error_message"></div>
             </div>
-        </div>
+            <div class="form_input_group">
+                <input type="password" class="form_input" autofocus placeholder="password">
+                <div class="form_input_error_message"></div>
+            </div>
+            <button class="form_button " type="submit">continue</button>
+            <p class="form_text">
+                <a href="#" class="form_link">Forgot your password?</a>
+            </p>
+            <p class="form_text">
+                <a href="./" class="form_link" id="linkCreateAccount">Dont have an account? Create an account</a>
+            </p>
+        </form>
+        <form class="form form_hidden" id="CreateAccount">
+            <h1 class="form_title">CreateAccount</h1>
+            <!-- <div class="form_message form_message_error"></div> -->
+            <div class="form_input_group">
+                <input type="text" class="form_input" id="signUpUserName" autofocus placeholder="Username">
+                <div class="form_input_error_message"></div>
+            </div>
+            <div class="form_input_group">
+                <input type="text" class="form_input" autofocus placeholder="email">
+                <div class="form_input_error_message"></div>
+            </div>
+            <div class="form_input_group">
+                <input type="password" class="form_input" autofocus placeholder="password">
+                <div class="form_input_error_message"></div>
+            </div>
+            <div class="form_input_group">
+                <input type="password" class="form_input" autofocus placeholder="confirm password">
+                <div class="form_input_error_message"></div>
+            </div>
+            <button class="form_button " id="buttonN" type="submit">continue</button>
+            <p class="form_text">
+                <a href="#" class="form_link">Forgot your password?</a>
+            </p>
+            <p class="form_text">
+                <a href="./" class="form_link" id="linkLogin">Already have an account? sign in</a>
+            </p>
+        </form>
     </div>
-</head>
-<body>
-    
+    <script src="script.js"></script>
 </body>
 </html>

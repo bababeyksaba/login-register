@@ -1,13 +1,121 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 
 body{
     display: flex;
     align-items: center;
-    justify-items: center;
     justify-content: center;
+    background:url(developer-relations-1200x0-c-default\ \(1\).webp);
+    font-size: 18px;
+    margin: 0;
     height: 100vh;
-    background-color: rgb(240, 235, 228);
+    background-size: cover;
+
 }
+.container{
+    width: 500px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgb(red, green, blue);
+    border-radius: 1px solid rgb(133, 101, 101) ;
+    background: white;
+}
+.form_hidden{
+    display: none;
+}
+.form > *:first-child {
+    margin-top: 0;
+}
+.form > *:last-child {
+    margin-bottom: 0;
+}
+.form_message{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+.form_title{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.form_message_success{
+    color: green;
+}
+.form_input_group{
+    margin-bottom: 1rem;
+    background-color: beige;
+}
+.form_input{
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border:1px solid #ffffff;
+    outline: none;
+    background: #eeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+.form_input:focus{
+    border: 1px solid rgb(117, 155, 142);
+}
+.form_input_error_message{
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: red;
+
+}
+.form_button{
+
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(117, 155, 142);
+}
+.form_button:active{
+    transform: scale(0.98);
+}
+.form_text{
+    text-align: center;
+
+    
+}
+.form_link{
+    text-decoration: none;
+    cursor: pointer;
+}
+.form_link:hover{
+    text-decoration: underline;
+}
+.form_input_error {
+    color: green;
+    border-color: red;
+}
+.form_message_error{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
