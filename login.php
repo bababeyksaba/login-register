@@ -1,14 +1,18 @@
 <?php
+session_start();
 include 'database.php';
-$user=$_POST['userName'];
+$user=$_POST['user'];
 $password=$_POST['password'];
-$sql = "INSERT INTO form (userName,password,date) VALUES ('$user','$password',NOW())";
-// $sql = "SELECT * FROM form WHERE userName = '$user AND password ='$password';";
+
+$sql = "SELECT *  FROM form WHERE  userName='$user' AND password = '$password';";
 $result = mysqli_query($con,$sql);
-if($result){
-    echo 'success';
+if(mysqli_num_rows ($result)>0){
+    // echo 'success';
+    $_SESSION['user'] =$user ;
+    $_SESSION['pass']=$password;
+    header('location: welcome.php');
 }else{
-    echo mysqli_error($con);
+    echo 'username or pass is wrong';
 }
 
 ?>

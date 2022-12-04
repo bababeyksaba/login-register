@@ -2,11 +2,14 @@
 $host = 'localhost';
 $user ='root';
 $password ='';
-$db ='login-register';
+$db ='login_register';
 $con = mysqli_connect($host,$user,$password,$db);
 if(!$con){
-    die("Connection failed: " . mysqli_connect_error());
+    echo 'error in database file';
+    exit();
 }
-mysqli_set_charset($con,'utf8');
+mysqli_set_charset($con,'utf8')
+
+
 
 ?>
